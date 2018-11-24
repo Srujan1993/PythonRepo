@@ -1,0 +1,6 @@
+if __name__ == '__main__':
+    n = int(input())
+    arr = map(int, input().split())
+    a=set(list(arr))
+    b=sorted(list(a),reverse=True)
+    print(b[1])

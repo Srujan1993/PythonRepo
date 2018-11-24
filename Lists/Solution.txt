@@ -1,0 +1,32 @@
+if __name__ == '__main__':
+    N = int(input())
+    count=0
+    l1=[]
+    l2=[]
+    l3=[]
+    import sys
+    a=sys.stdin.read()
+    l1=a.split('\n')
+    for b in l1:
+        l2=b.split(' ')
+        if(l2[0]=='insert'):
+            l3.insert(int(l2[1]),int(l2[2]))
+        elif(l2[0]=='print'):
+            print(l3)
+        elif(l2[0]=='remove'):
+            l3.remove(int(l2[1]))
+        elif(l2[0]=='append'):
+            l3.append(int(l2[1]))
+        elif(l2[0]=='sort'):
+            l3.sort()
+        elif(l2[0]=='pop'):
+            l3.pop()
+        elif(l2[0]=='reverse'):
+            l3.reverse()
+        
+        
+        
+        
+       
+        
+    
